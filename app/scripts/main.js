@@ -1,4 +1,3 @@
-console.log('\'Allo \'Allo!');
 
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
@@ -20,4 +19,4 @@ $('#btn-confirm').click(function(){
 });
 
 
-  
+    
