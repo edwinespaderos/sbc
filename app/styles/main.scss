@@ -48,6 +48,11 @@ body {
   }
 }
 
+.container {
+  margin: 0 auto;
+  width: 800px;
+  // outline: 1px solid green;
+}
 
 a {
   text-decoration: none;
@@ -111,32 +116,31 @@ a {
   text-align: center;
   margin: 70px auto;
   text-transform: uppercase;
-  font-family: 'BigNoodleTitling', sans;
+  font-family: 'BigNoodleTitling', sans-serif;
   font-size: 70px;
 
 }
 
 .main-image {
   width: 100%;
-  height: 413px;
-  background: rgb(61, 60, 66);
+  height: 375px;
   background: url(../images/brew1.jpg) no-repeat;
+  position: relative;
   background-attachment: fixed;
-  background-size: 1660px;
-  margin: 0;
+  background-size: 100%;
+  background-position-y: -220px;
   display: inline-block;
   box-shadow: -2px -2px 1px #333;
   border-bottom: 10px solid #333;
   ul {
-    margin: 21px 24.3%;
+    margin: 20px auto;
     list-style: none;
+    display: inline-block;
     color: #fff;
-    // text-align: center; 
-    padding: 0;
   }   
   li {
-    display: inline;
     margin-left: 30px;
+    display: inline;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-shadow: 1px 2px 3px #333;
@@ -179,32 +183,28 @@ a {
 }
 
 .products {
-  display: inline-block;
-  width: 900px;
-  padding: 0 250px;
 
-  div {
-    height: 400px;
-    display: inline-block;
-    vertical-align: center;
-    .hero {
-      width: 400px;
+  .product-info {
+    width: 100%;
+
+    .img-hero {
+      display: inline-block;  
+      margin-left: -45px;
+      .hero {
+        width: 400px;
+      }
+    }
+    p { 
+      vertical-align: top;
+      float: right;
+      width: 50%;
+      margin-top: 130px;
+      line-height: 25px;
+      font-size: 18px;
+      border-left: 5px solid #333;
+      padding-left: 28px;
     }
   }
-  p { 
-    vertical-align: top;
-    display: inline-block;
-    /* height: 221px; */
-    width: 452px;
-    margin-top: 130px;
-    line-height: 25px;
-    font-size: 18px;
-    border-left: 5px solid #333;
-    padding-left: 28px;
-  }
-  // .stout-text {
-  //   margin-top: 120px;
-  // }
 }
 
 
@@ -213,10 +213,6 @@ a {
   display: inline-block;
   padding-bottom: 70px;
 
-  .container{
-    margin: auto;
-    width: 800px;
-  }
   .line{
     margin-top: 20px;
     border-bottom: 1px dashed #333;
@@ -249,26 +245,24 @@ a {
 
 .contact {
   width: 100%;
-  background: rgb(60, 60, 60);
-  padding: 30px 0;
+  height: 100%;
+  background: #3c3c3c;
   border-top: 11px solid #2C2C2C;
   box-shadow: inset -0px 6px 30px -5px #131313;
   
   .icons {
-    margin: -4% 42% 0% 42%;
-    vertical-align: top;
-    display: inline;
+    padding: 0.5em 18em;
+    margin-top: 0.65em;
   }
   .one {
-    margin-left: 10px;
     height: 100px;
     width: 100px;
     display: inline-block;
     border-radius: 100%;
     background: #333;
     box-shadow: inset 0px 0 4px #2C2C2C;
-
   }
+ 
   p {
     text-align: center;
     color: #8F8F8F;
@@ -315,15 +309,9 @@ a {
 .color {
   background: rgba(248, 195, 28, 0.76);
   width: 100%;
-  // height: 234px;
   display: inline-block;
   z-index: 200;
   position: relative;
   margin-top: 0px;
-  // box-shadow: inset 0 0 100px #000000
 }
 
-// p {
-//   font-family: georgia;
-//   font-size: 20px;
-// }
