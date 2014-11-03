@@ -49,7 +49,7 @@ body {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 0 auto 100px auto;
   width: 800px;
   // outline: 1px solid green;
 }
@@ -208,10 +208,10 @@ a {
 }
 
 
-.news {
+.news ul{
   width: 100%;
   display: inline-block;
-  padding-bottom: 70px;
+  padding-bottom: 10px;
 
   .line{
     margin-top: 20px;
@@ -235,12 +235,17 @@ a {
   }
   p {
     width: 800px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
     line-height: 26px;  
     font-size: 18px;
     font-style: normal;
     font-weight: lighter;
   }
+
+}
+
+.last-p {
+  margin-bottom: 70px;
 }
 
 .contact {
